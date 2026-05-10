@@ -62,7 +62,7 @@ li {
 }
 
 .task-container {
-  background: #c3dbf1;
+  background: #e1eefa;
   padding: 15px 20px;
   border-radius: 10px;
   display: grid;
@@ -73,18 +73,18 @@ li {
 .task {
   text-align: left;
   font-weight: bold;
-  color: #1e293b;
+  color: #3d3d3d;
 }
 
 .deadline {
   text-align: center;
   font-weight: bold;
-  color: #1e293b;
+  color: #3d3d3d;
 }
 
 .status {
   text-align: right;
-  color: red;
+  color: rgb(252, 72, 72);
   font-weight: bold;
 }
 
