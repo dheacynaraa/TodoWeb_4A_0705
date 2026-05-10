@@ -2,7 +2,7 @@
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background: #f1f5f9;
+  background: #eef5fc;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -22,6 +22,7 @@ input {
   padding: 8px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
+  color: #292929;
 }
 
 button {
@@ -38,6 +39,7 @@ button:hover {
 }
 
 .column {
+  color: #1547b3;  
   display: flex;
   justify-content: space-around;
   margin-top: 10px;

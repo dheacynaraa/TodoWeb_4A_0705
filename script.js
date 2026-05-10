@@ -44,8 +44,8 @@ btnAdd.addEventListener("click", function () {
   };
 
   if (
-    (listBaru.querySelector(".fa-trash").onclick = function () {
-      listBaru.remove();
+    (newList.querySelector(".fa-trash").onclick = function () {
+      newList.remove();
     })
   )
 
