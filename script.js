@@ -33,6 +33,14 @@ btnAdd.addEventListener("click", function () {
     })
   );
 
+  newList.querySelector(".fa-edit").onclick = function () {
+    const editTextTask = prompt("Edit Task : ", textTask);    
+    
+    if (editTextTask !== null && editTextTask !== "") {
+      newList.querySelector(".task").innerText = editTextTask;      
+    }
+  };
+
   taskList.appendChild(newList);
 
   inputTask.value = "";
