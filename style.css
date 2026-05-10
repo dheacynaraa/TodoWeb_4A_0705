@@ -8,6 +8,7 @@
 }
 
 h1 {
+  font-family: sans-serif;  
   text-align: center;
   color: #4338ca;
 }
@@ -39,16 +40,18 @@ input {
 }
 
 .column {
+  font-family: system-ui;  
   color: #1547b3;  
   display: flex;
   justify-content: space-around;
   margin-top: 10px;
   margin-left: 0.1rem;
-  max-width: 450px;
+  max-width: 470px;
   gap: 3rem;
 }
 
 ul {
+  font-family: system-ui;
   list-style-type: none;
   padding: 0;
 }
@@ -114,11 +117,11 @@ li {
   margin-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
-  max-width: 580px;
+  max-width: 590px;
 }
 
 #btnClear {
-  padding: 10px 20px;
+  padding: 10px 15px;
   background: #eb4d4d;
   color: white;
   border: none;
