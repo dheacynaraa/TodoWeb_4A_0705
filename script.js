@@ -1,27 +1,27 @@
-const inputTugas = document.getElementById("inputTugas");
-const btnTambah = document.getElementById("btnTambah");
-const daftarTugas = document.getElementById("daftarTugas");
+const inputTask = document.getElementById("inputTask");
+const btnAdd = document.getElementById("btnAdd");
+const taskList = document.getElementById("taskList");
 
-btnTambah.addEventListener("click", function() {
+btnAdd.addEventListener("click", function() {
 
-    let teksTugas = inputTugas.value;
+    let textTask = inputTask.value;
 
-    if(teksTugas === "") {
-        alert("Data harus dimasukkan!");
+    if(textTask === "") {
+        alert("Data must be entered!");
         return;
     }
 
-    let listBaru = document.createElement("li");
-    let spanBaru = document.createElement("span");
+    let newList = document.createElement("li");
+    let newSpan = document.createElement("span");
 
-    spanBaru.innerHTML = teksTugas;
+    newSpan.innerHTML = textTask;
 
-    listBaru.appendChild(spanBaru);
+    newList.appendChild(newSpan);
 
-    daftarTugas.appendChild(listBaru);
+    taskList.appendChild(newList);
     
-    const warnaBaru = document.querySelectorAll("li");
-    warnaBaru.forEach((item, index) => {
+    const newColor = document.querySelectorAll("li");
+    newColor.forEach((item, index) => {
         if(index % 2 === 0) {
             item.style.color = "red";
         } else {
@@ -29,6 +29,6 @@ btnTambah.addEventListener("click", function() {
         }
     });    
 
-    inputTugas.value = "";
+    inputTask.value = "";
     
  });

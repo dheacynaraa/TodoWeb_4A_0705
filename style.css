@@ -37,10 +37,10 @@ li {
     justify-content: space-between;
 }
 
-.hapus {
+.delete {
     background: #ef4444;
 }
 
-.hapus:hover {
+.delete:hover {
     background: #dc2626;
 }
