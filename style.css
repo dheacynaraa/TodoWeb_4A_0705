@@ -39,10 +39,11 @@ button:hover {
 
 .column {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10px;
-  max-width: 415px;
-  margin-left: 1.7rem;
+  margin-left: 0.1rem;
+  max-width: 450px;
+  gap: 3rem;
 }
 
 ul {
@@ -62,17 +63,25 @@ li {
   background: #c3dbf1;
   padding: 15px 20px;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
 }
 
 .task {
+  text-align: left;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.deadline {
+  text-align: center;
   font-weight: bold;
   color: #1e293b;
 }
 
 .status {
+  text-align: right;
   color: red;
   font-weight: bold;
 }
