@@ -77,10 +77,24 @@ li {
   font-weight: bold;
 }
 
-.delete {
-  background: #ef4444;
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
 }
 
-.delete:hover {
-  background: #dc2626;
+.actions i.fas.fa-check {
+  cursor: pointer;
+  color: #10b981;
+}
+
+.actions i.fas.fa-edit {
+  cursor: pointer;
+  color: #3b82f6;
+}
+
+.actions i.fas.fa-trash {
+  cursor: pointer;
+  color: #ef4444;
 }
