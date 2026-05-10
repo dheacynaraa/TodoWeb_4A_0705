@@ -109,3 +109,16 @@ li {
   cursor: pointer;
   color: #ef4444;
 }
+
+#btnClear {
+  padding: 10px 20px;
+  background: #eb4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnClear:hover {
+  background: #d63838;
+}
