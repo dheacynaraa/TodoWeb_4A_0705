@@ -2,24 +2,23 @@ const inputTask = document.getElementById("inputTask");
 const btnAdd = document.getElementById("btnAdd");
 const taskList = document.getElementById("taskList");
 
-btnAdd.addEventListener("click", function() {
+btnAdd.addEventListener("click", function () {
+  let textTask = inputTask.value;
 
-    let textTask = inputTask.value;
+  if (textTask === "") {
+    alert("Data must be entered!");
+    return;
+  }
 
-    if(textTask === "") {
-        alert("Data must be entered!");
-        return;
-    }
+  let newList = document.createElement("li");
 
-    let newList = document.createElement("li");
-    let newSpan = document.createElement("span");
+  newList.innerHTML = `<div class="task-container">
+            <div class="task">${textTask}</div>
+            <div class="status">On Progress</div>
+        </div>
+        `;
 
-    newSpan.innerHTML = textTask;
+  taskList.appendChild(newList);
 
-    newList.appendChild(newSpan);
-
-    taskList.appendChild(newList);
-
-    inputTask.value = "";
-    
- });
+  inputTask.value = "";
+});
