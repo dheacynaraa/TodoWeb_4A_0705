@@ -26,6 +26,13 @@ btnAdd.addEventListener("click", function () {
         <i class="fas fa-trash"></i>
     </div>`;
 
+  if (
+    (newList.querySelector(".fa-check").onclick = function () {
+      newList.querySelector(".status").innerText = "Done";
+      newList.querySelector(".status").style.color = "green";
+    })
+  );
+
   taskList.appendChild(newList);
 
   inputTask.value = "";
