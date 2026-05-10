@@ -1,6 +1,7 @@
 const inputTask = document.getElementById("inputTask");
 const btnAdd = document.getElementById("btnAdd");
 const taskList = document.getElementById("taskList");
+const btnClear = document.getElementById("btnClear");
 
 btnAdd.addEventListener("click", function () {
   let textTask = inputTask.value;
@@ -48,6 +49,10 @@ btnAdd.addEventListener("click", function () {
       newList.remove();
     })
   )
+
+  btnClear.addEventListener("click", function () {
+    taskList.remove();
+  })
 
   taskList.appendChild(newList);
 
