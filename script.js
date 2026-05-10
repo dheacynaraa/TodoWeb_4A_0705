@@ -34,10 +34,12 @@ btnAdd.addEventListener("click", function () {
   );
 
   newList.querySelector(".fa-edit").onclick = function () {
-    const editTextTask = prompt("Edit Task : ", textTask);    
+    const editTextTask = prompt("Edit Task : ", textTask);
+    const editDeadlineTask = prompt("Deadline Task : ", deadlineTask);
     
-    if (editTextTask !== null && editTextTask !== "") {
-      newList.querySelector(".task").innerText = editTextTask;      
+    if (editTextTask !== null && editTextTask !== "" && editDeadlineTask !== null && editDeadlineTask !== "") {
+      newList.querySelector(".task").innerText = editTextTask;
+      newList.querySelector(".deadline").innerText = editDeadlineTask;
     }
   };
 
