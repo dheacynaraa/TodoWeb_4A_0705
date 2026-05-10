@@ -43,6 +43,12 @@ btnAdd.addEventListener("click", function () {
     }
   };
 
+  if (
+    (listBaru.querySelector(".fa-trash").onclick = function () {
+      listBaru.remove();
+    })
+  )
+
   taskList.appendChild(newList);
 
   inputTask.value = "";
