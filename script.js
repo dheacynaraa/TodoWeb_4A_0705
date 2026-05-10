@@ -19,15 +19,6 @@ btnAdd.addEventListener("click", function() {
     newList.appendChild(newSpan);
 
     taskList.appendChild(newList);
-    
-    const newColor = document.querySelectorAll("li");
-    newColor.forEach((item, index) => {
-        if(index % 2 === 0) {
-            item.style.color = "red";
-        } else {
-            item.style.color = "green";
-        }
-    });    
 
     inputTask.value = "";
     
