@@ -10,11 +10,13 @@ btnAdd.addEventListener("click", function () {
     return;
   }
 
+  let deadlineTask = prompt("Deadline Task : ");
   let newList = document.createElement("li");
 
   newList.innerHTML = 
   `<div class="task-container">
         <div class="task">${textTask}</div>
+        <div class="deadline">${deadlineTask}</div>
         <div class="status">On Progress</div>
     </div>
 
